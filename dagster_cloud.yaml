@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./olist_data_pipeline
+  code_source:
+    module_name: olist_data_pipeline.definitions
+  location_name: olist_data_pipeline
