@@ -1,0 +1,32 @@
+[0m15:12:40.857876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016796AD5310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016799937800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016799937500>]}
+
+
+============================== 15:12:40.894547 | ce0aa1e8-17a3-4b77-8ace-963fb0914ffa ==============================
+[0m15:12:40.894547 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:12:40.894547 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\SURF\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init olist_transform', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:12:40.951583 [debug] [MainThread]: Starter project path: C:\Users\SURF\snowflake_pilot\env\Lib\site-packages\dbt\include\starter_project
+[0m15:12:40.997713 [info ] [MainThread]: 
+Your new dbt project "olist_transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:12:40.998748 [info ] [MainThread]: Setting up your profile.
+[0m15:14:22.225420 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:14:22.227176 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:14:22.227176 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:39:39.215893 [info ] [MainThread]: Profile olist_transform written to C:\Users\SURF\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:39:39.626892 [debug] [MainThread]: Command `dbt init` succeeded at 16:39:39.610367 after 5218.96 seconds
+[0m16:39:39.684351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001679C364680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001679B43CA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016799D5A630>]}
+[0m16:39:39.721196 [debug] [MainThread]: Flushing usage events
+[0m16:39:42.638228 [debug] [MainThread]: An error was encountered while trying to flush usage events

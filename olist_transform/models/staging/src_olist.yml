@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: olist_raw
+    database: OLIST_PROJECT
+    schema: PUBLIC
+    tables:
+      - name: raw_customers
+        identifier: RAW_CUSTOMERS
+      - name: raw_orders
+        identifier: RAW_ORDERS
