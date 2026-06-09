@@ -1,6 +1,0 @@
-locations:
-  - location_name: olist_data_pipeline
-    code_source:
-      package_name: olist_transform
-    build:
-      directory: .
