@@ -19,7 +19,8 @@ ctx = snowflake.connector.connect(
     account = 'DCWKBGQ-QH90954',
     warehouse = 'ENGINEERING_WH',
     database = 'olist_project',
-    schema = 'PUBLIC'
+    schema = 'PUBLIC',
+    role = 'engineering_role'
 )
 
 cursor = ctx.cursor()
