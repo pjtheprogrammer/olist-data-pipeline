@@ -14,12 +14,14 @@ olist_dbt_job = define_asset_job(name="olist_dbt_job", selection="*")
 
 olist_dbt_schedule = ScheduleDefinition(
     job=olist_dbt_job,
-    cron_schedule="0 0 * * *", 
+    cron_schedule="0 0 * * *"
 )
 
 defs = Definitions(
     assets=[olist_dbt_assets],
+    schedules=[olist_dbt_schedule],
+    jobs=[olist_dbt_job],
     resources={
         "dbt": DbtCliResource(project_dir=os.fspath(dbt_project_dir)),
-    },
+    }
 )
