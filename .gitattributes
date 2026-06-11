@@ -1,3 +1,0 @@
-*.py linguist-detect=true
-*.sql linguist-detect=true
-*.yml linguist-detect=true
