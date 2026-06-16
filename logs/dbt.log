@@ -6627,3 +6627,282 @@ group by o.order_id
 [0m01:47:39.932451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002112FC8C530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002112F2F5C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002112FC6DA90>]}
 [0m01:47:39.932451 [debug] [MainThread]: Flushing usage events
 [0m01:47:42.366256 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:49:51.564796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002481271EAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024812D0F5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248114F6090>]}
+
+
+============================== 01:49:51.570189 | 7966fa82-4622-4357-813b-d475f6360e9e ==============================
+[0m01:49:51.570189 [info ] [MainThread]: Running with dbt=1.11.11
+[0m01:49:51.570189 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\SURF\\snowflake_pilot', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\SURF\\snowflake_pilot\\logs'}
+[0m01:49:52.332761 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m01:49:52.332761 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m01:49:52.333776 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m01:49:52.632555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248129E0080>]}
+[0m01:49:52.726079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024814D45D00>]}
+[0m01:49:52.728290 [info ] [MainThread]: Registered adapter: snowflake=1.11.5
+[0m01:49:53.149394 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m01:49:53.326578 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:49:53.327577 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m01:49:53.327577 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:49:53.333581 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.olist_transform.example
+[0m01:49:53.383129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024815318E90>]}
+[0m01:49:53.482788 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SURF\snowflake_pilot\target\manifest.json
+[0m01:49:53.486131 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SURF\snowflake_pilot\target\semantic_manifest.json
+[0m01:49:53.503816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248153D1C10>]}
+[0m01:49:53.503816 [info ] [MainThread]: Found 7 models, 4 data tests, 3 sources, 536 macros
+[0m01:49:53.504815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024815589FA0>]}
+[0m01:49:53.506814 [info ] [MainThread]: 
+[0m01:49:53.506814 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:49:53.507818 [info ] [MainThread]: 
+[0m01:49:53.507818 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:49:53.514486 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_OLIST_PROJECT'
+[0m01:49:53.601831 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_PROJECT"
+[0m01:49:53.601831 [debug] [ThreadPool]: On list_OLIST_PROJECT: show terse schemas in database OLIST_PROJECT
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "connection_name": "list_OLIST_PROJECT"} */
+[0m01:49:53.602823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:49:55.311569 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.708 seconds
+[0m01:49:55.319669 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_OLIST_PROJECT_PUBLIC'
+[0m01:49:55.346670 [debug] [ThreadPool]: Using snowflake connection "list_OLIST_PROJECT_PUBLIC"
+[0m01:49:55.348126 [debug] [ThreadPool]: On list_OLIST_PROJECT_PUBLIC: show objects in OLIST_PROJECT.PUBLIC
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "connection_name": "list_OLIST_PROJECT_PUBLIC"} */;
+[0m01:49:55.348126 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:49:56.486954 [debug] [ThreadPool]: SQL status: SUCCESS 13 in 1.138 seconds
+[0m01:49:56.500945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002480FBF3DD0>]}
+[0m01:49:56.509002 [debug] [Thread-2 (]: Began running node model.olist_transform.stg_customers
+[0m01:49:56.509002 [debug] [Thread-3 (]: Began running node model.olist_transform.stg_order_items
+[0m01:49:56.510970 [debug] [Thread-4 (]: Began running node model.olist_transform.stg_orders
+[0m01:49:56.510001 [info ] [Thread-2 (]: 1 of 7 START sql view model PUBLIC.stg_customers ............................... [RUN]
+[0m01:49:56.510970 [info ] [Thread-3 (]: 2 of 7 START sql view model PUBLIC.stg_order_items ............................. [RUN]
+[0m01:49:56.513006 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.olist_transform.stg_customers'
+[0m01:49:56.511970 [info ] [Thread-4 (]: 3 of 7 START sql view model PUBLIC.stg_orders .................................. [RUN]
+[0m01:49:56.513965 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.olist_transform.stg_order_items'
+[0m01:49:56.513965 [debug] [Thread-2 (]: Began compiling node model.olist_transform.stg_customers
+[0m01:49:56.514963 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.olist_transform.stg_orders'
+[0m01:49:56.514963 [debug] [Thread-3 (]: Began compiling node model.olist_transform.stg_order_items
+[0m01:49:56.525777 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_transform.stg_customers"
+[0m01:49:56.525777 [debug] [Thread-4 (]: Began compiling node model.olist_transform.stg_orders
+[0m01:49:56.528803 [debug] [Thread-3 (]: Writing injected SQL for node "model.olist_transform.stg_order_items"
+[0m01:49:56.533820 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_transform.stg_orders"
+[0m01:49:56.536791 [debug] [Thread-2 (]: Began executing node model.olist_transform.stg_customers
+[0m01:49:56.550192 [debug] [Thread-3 (]: Began executing node model.olist_transform.stg_order_items
+[0m01:49:56.580194 [debug] [Thread-4 (]: Began executing node model.olist_transform.stg_orders
+[0m01:49:56.592191 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_transform.stg_customers"
+[0m01:49:56.599200 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_transform.stg_orders"
+[0m01:49:56.607314 [debug] [Thread-3 (]: Writing runtime sql for node "model.olist_transform.stg_order_items"
+[0m01:49:56.611460 [debug] [Thread-4 (]: Using snowflake connection "model.olist_transform.stg_orders"
+[0m01:49:56.612700 [debug] [Thread-2 (]: Using snowflake connection "model.olist_transform.stg_customers"
+[0m01:49:56.613946 [debug] [Thread-4 (]: On model.olist_transform.stg_orders: create or replace   view OLIST_PROJECT.PUBLIC.stg_orders
+  
+  
+  
+  
+  as (
+    select 
+    order_id,
+    customer_id,
+    order_status,
+    to_timestamp_ntz(order_purchase_timestamp/1000000000) as purchase_date,
+    to_timestamp_ntz(order_approved_at/1000000000) as approval_date,
+    to_timestamp_ntz(order_delivered_carrier_date/1000000000) as carrier_delivered_date,
+    to_timestamp_ntz(order_estimated_delivery_date/1000000000) as estimated_delivery_date,
+    to_timestamp_ntz(order_delivered_customer_date/1000000000) as customer_delivered_date,
+from OLIST_PROJECT.PUBLIC.RAW_ORDERS
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.stg_orders"} */;
+[0m01:49:56.614947 [debug] [Thread-2 (]: On model.olist_transform.stg_customers: create or replace   view OLIST_PROJECT.PUBLIC.stg_customers
+  
+  
+  
+  
+  as (
+    select 
+    customer_id,
+    customer_city,
+    customer_state
+from OLIST_PROJECT.PUBLIC.RAW_CUSTOMERS
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.stg_customers"} */;
+[0m01:49:56.615949 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m01:49:56.616979 [debug] [Thread-3 (]: Using snowflake connection "model.olist_transform.stg_order_items"
+[0m01:49:56.617951 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:49:56.617951 [debug] [Thread-3 (]: On model.olist_transform.stg_order_items: create or replace   view OLIST_PROJECT.PUBLIC.stg_order_items
+  
+  
+  
+  
+  as (
+    select * from OLIST_PROJECT.PUBLIC.RAW_ORDER_ITEMS
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.stg_order_items"} */;
+[0m01:49:56.619503 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m01:49:57.793546 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.173 seconds
+[0m01:49:57.841324 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248141233E0>]}
+[0m01:49:57.841324 [info ] [Thread-3 (]: 2 of 7 OK created sql view model PUBLIC.stg_order_items ........................ [[32mSUCCESS 1[0m in 1.33s]
+[0m01:49:57.842330 [debug] [Thread-3 (]: Finished running node model.olist_transform.stg_order_items
+[0m01:49:57.860496 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.245 seconds
+[0m01:49:57.862723 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248159B97F0>]}
+[0m01:49:57.862723 [info ] [Thread-4 (]: 3 of 7 OK created sql view model PUBLIC.stg_orders ............................. [[32mSUCCESS 1[0m in 1.35s]
+[0m01:49:57.864177 [debug] [Thread-4 (]: Finished running node model.olist_transform.stg_orders
+[0m01:49:57.865415 [debug] [Thread-5 (]: Began running node model.olist_transform.fct_leakage_rate
+[0m01:49:57.866416 [debug] [Thread-3 (]: Began running node model.olist_transform.fct_order_delivery_performance
+[0m01:49:57.866416 [debug] [Thread-4 (]: Began running node model.olist_transform.fct_revenue_per_order
+[0m01:49:57.867413 [info ] [Thread-5 (]: 4 of 7 START sql view model PUBLIC.fct_leakage_rate ............................ [RUN]
+[0m01:49:57.868784 [info ] [Thread-3 (]: 5 of 7 START sql view model PUBLIC.fct_order_delivery_performance .............. [RUN]
+[0m01:49:57.870836 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.olist_transform.fct_leakage_rate'
+[0m01:49:57.871837 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.olist_transform.stg_order_items, now model.olist_transform.fct_order_delivery_performance)
+[0m01:49:57.869786 [info ] [Thread-4 (]: 6 of 7 START sql view model PUBLIC.fct_revenue_per_order ....................... [RUN]
+[0m01:49:57.874837 [debug] [Thread-5 (]: Began compiling node model.olist_transform.fct_leakage_rate
+[0m01:49:57.874837 [debug] [Thread-3 (]: Began compiling node model.olist_transform.fct_order_delivery_performance
+[0m01:49:57.875834 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.olist_transform.stg_orders, now model.olist_transform.fct_revenue_per_order)
+[0m01:49:57.879541 [debug] [Thread-5 (]: Writing injected SQL for node "model.olist_transform.fct_leakage_rate"
+[0m01:49:57.884545 [debug] [Thread-3 (]: Writing injected SQL for node "model.olist_transform.fct_order_delivery_performance"
+[0m01:49:57.885549 [debug] [Thread-4 (]: Began compiling node model.olist_transform.fct_revenue_per_order
+[0m01:49:57.891034 [debug] [Thread-4 (]: Writing injected SQL for node "model.olist_transform.fct_revenue_per_order"
+[0m01:49:57.892034 [debug] [Thread-5 (]: Began executing node model.olist_transform.fct_leakage_rate
+[0m01:49:57.896354 [debug] [Thread-5 (]: Writing runtime sql for node "model.olist_transform.fct_leakage_rate"
+[0m01:49:57.898357 [debug] [Thread-4 (]: Began executing node model.olist_transform.fct_revenue_per_order
+[0m01:49:57.899360 [debug] [Thread-3 (]: Began executing node model.olist_transform.fct_order_delivery_performance
+[0m01:49:57.904301 [debug] [Thread-4 (]: Writing runtime sql for node "model.olist_transform.fct_revenue_per_order"
+[0m01:49:57.906812 [debug] [Thread-3 (]: Writing runtime sql for node "model.olist_transform.fct_order_delivery_performance"
+[0m01:49:57.908814 [debug] [Thread-5 (]: Using snowflake connection "model.olist_transform.fct_leakage_rate"
+[0m01:49:57.908814 [debug] [Thread-5 (]: On model.olist_transform.fct_leakage_rate: create or replace   view OLIST_PROJECT.PUBLIC.fct_leakage_rate
+  
+  
+  
+  
+  as (
+    select * from OLIST_PROJECT.PUBLIC.stg_orders
+where approval_date is not null
+and order_status = 'canceled'
+or order_status = 'unavailable'
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.fct_leakage_rate"} */;
+[0m01:49:57.909812 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m01:49:57.910838 [debug] [Thread-3 (]: Using snowflake connection "model.olist_transform.fct_order_delivery_performance"
+[0m01:49:57.911836 [debug] [Thread-3 (]: On model.olist_transform.fct_order_delivery_performance: create or replace   view OLIST_PROJECT.PUBLIC.fct_order_delivery_performance
+  
+  
+  
+  
+  as (
+    select 
+    *,
+    datediff('day', purchase_date, estimated_delivery_date) as estimated_delivery_time,
+    datediff('day', purchase_date, customer_delivered_date) as actual_delivery_time,
+    estimated_delivery_time - actual_delivery_time as estimated_vs_actual,
+    case
+        when estimated_vs_actual > 0 then 'early'
+        when estimated_vs_actual < 0 then 'late'
+    end as punctuality_performance,
+    datediff('day', carrier_delivered_date, customer_delivered_date) as days_in_carrier_transit
+from OLIST_PROJECT.PUBLIC.stg_orders
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.fct_order_delivery_performance"} */;
+[0m01:49:57.912841 [debug] [Thread-4 (]: Using snowflake connection "model.olist_transform.fct_revenue_per_order"
+[0m01:49:57.914149 [debug] [Thread-4 (]: On model.olist_transform.fct_revenue_per_order: create or replace   view OLIST_PROJECT.PUBLIC.fct_revenue_per_order
+  
+  
+  
+  
+  as (
+    select 
+    o.order_id,
+    count(oi.order_item_id) as no_of_items,
+    sum(oi.price) as total_price,
+    sum(oi.freight_value) as freight_cost,
+    total_price + freight_cost as total_order_value
+from OLIST_PROJECT.PUBLIC.stg_orders o
+join OLIST_PROJECT.PUBLIC.stg_order_items oi on o.order_id = oi.order_id
+group by o.order_id
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.fct_revenue_per_order"} */;
+[0m01:49:58.057930 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.440 seconds
+[0m01:49:58.068883 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024815A36F00>]}
+[0m01:49:58.070919 [info ] [Thread-2 (]: 1 of 7 OK created sql view model PUBLIC.stg_customers .......................... [[32mSUCCESS 1[0m in 1.56s]
+[0m01:49:58.074855 [debug] [Thread-2 (]: Finished running node model.olist_transform.stg_customers
+[0m01:49:58.077855 [debug] [Thread-2 (]: Began running node model.olist_transform.fct_customer_rfm_segmentation
+[0m01:49:58.080858 [info ] [Thread-2 (]: 7 of 7 START sql view model PUBLIC.fct_customer_rfm_segmentation ............... [RUN]
+[0m01:49:58.082860 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.olist_transform.stg_customers, now model.olist_transform.fct_customer_rfm_segmentation)
+[0m01:49:58.085303 [debug] [Thread-2 (]: Began compiling node model.olist_transform.fct_customer_rfm_segmentation
+[0m01:49:58.094587 [debug] [Thread-2 (]: Writing injected SQL for node "model.olist_transform.fct_customer_rfm_segmentation"
+[0m01:49:58.096546 [debug] [Thread-2 (]: Began executing node model.olist_transform.fct_customer_rfm_segmentation
+[0m01:49:58.103585 [debug] [Thread-2 (]: Writing runtime sql for node "model.olist_transform.fct_customer_rfm_segmentation"
+[0m01:49:58.106921 [debug] [Thread-2 (]: Using snowflake connection "model.olist_transform.fct_customer_rfm_segmentation"
+[0m01:49:58.106921 [debug] [Thread-2 (]: On model.olist_transform.fct_customer_rfm_segmentation: create or replace   view OLIST_PROJECT.PUBLIC.fct_customer_rfm_segmentation
+  
+  
+  
+  
+  as (
+    with customer_rfm as (
+select
+    o.customer_id,
+    max(o.approval_date) as most_recent_order,
+    count(o.order_id) as order_frequency,
+    sum(oi.price) as total_order_value
+from OLIST_PROJECT.PUBLIC.stg_orders o
+left join OLIST_PROJECT.PUBLIC.stg_order_items oi on o.order_id = oi.order_id
+where o.order_status = 'delivered'
+group by o.customer_id
+)
+
+select 
+    c.customer_id,
+    c.customer_state,
+    c.customer_city,
+    crfm.most_recent_order,
+    crfm.order_frequency,
+    crfm.total_order_value
+from OLIST_PROJECT.PUBLIC.stg_customers c
+left join customer_rfm crfm on c.customer_id = crfm.customer_id
+order by order_frequency, customer_id
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "olist_transform", "target_name": "dev", "node_id": "model.olist_transform.fct_customer_rfm_segmentation"} */;
+[0m01:49:58.422973 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.508 seconds
+[0m01:49:58.435182 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024816F3BAD0>]}
+[0m01:49:58.438775 [info ] [Thread-4 (]: 6 of 7 OK created sql view model PUBLIC.fct_revenue_per_order .................. [[32mSUCCESS 1[0m in 0.56s]
+[0m01:49:58.442802 [debug] [Thread-4 (]: Finished running node model.olist_transform.fct_revenue_per_order
+[0m01:49:58.447858 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.535 seconds
+[0m01:49:58.475800 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248155ABAA0>]}
+[0m01:49:58.477754 [info ] [Thread-3 (]: 5 of 7 OK created sql view model PUBLIC.fct_order_delivery_performance ......... [[32mSUCCESS 1[0m in 0.60s]
+[0m01:49:58.479790 [debug] [Thread-3 (]: Finished running node model.olist_transform.fct_order_delivery_performance
+[0m01:49:58.645160 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.536 seconds
+[0m01:49:58.655162 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024815A54EF0>]}
+[0m01:49:58.658156 [info ] [Thread-2 (]: 7 of 7 OK created sql view model PUBLIC.fct_customer_rfm_segmentation .......... [[32mSUCCESS 1[0m in 0.57s]
+[0m01:49:58.660165 [debug] [Thread-2 (]: Finished running node model.olist_transform.fct_customer_rfm_segmentation
+[0m01:49:59.078357 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.169 seconds
+[0m01:49:59.082354 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7966fa82-4622-4357-813b-d475f6360e9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024816F3B680>]}
+[0m01:49:59.082354 [info ] [Thread-5 (]: 4 of 7 OK created sql view model PUBLIC.fct_leakage_rate ....................... [[32mSUCCESS 1[0m in 1.21s]
+[0m01:49:59.084362 [debug] [Thread-5 (]: Finished running node model.olist_transform.fct_leakage_rate
+[0m01:49:59.085367 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:49:59.086547 [debug] [MainThread]: Connection 'list_OLIST_PROJECT' was left open.
+[0m01:49:59.086547 [debug] [MainThread]: On list_OLIST_PROJECT: Close
+[0m01:49:59.801104 [debug] [MainThread]: Connection 'list_OLIST_PROJECT_PUBLIC' was left open.
+[0m01:49:59.802099 [debug] [MainThread]: On list_OLIST_PROJECT_PUBLIC: Close
+[0m01:50:00.208223 [debug] [MainThread]: Connection 'model.olist_transform.fct_customer_rfm_segmentation' was left open.
+[0m01:50:00.209252 [debug] [MainThread]: On model.olist_transform.fct_customer_rfm_segmentation: Close
+[0m01:50:00.543711 [debug] [MainThread]: Connection 'model.olist_transform.fct_order_delivery_performance' was left open.
+[0m01:50:00.545744 [debug] [MainThread]: On model.olist_transform.fct_order_delivery_performance: Close
+[0m01:50:00.898007 [debug] [MainThread]: Connection 'model.olist_transform.fct_revenue_per_order' was left open.
+[0m01:50:00.899941 [debug] [MainThread]: On model.olist_transform.fct_revenue_per_order: Close
+[0m01:50:01.330518 [debug] [MainThread]: Connection 'model.olist_transform.fct_leakage_rate' was left open.
+[0m01:50:01.331545 [debug] [MainThread]: On model.olist_transform.fct_leakage_rate: Close
+[0m01:50:01.802399 [info ] [MainThread]: 
+[0m01:50:01.805334 [info ] [MainThread]: Finished running 7 view models in 0 hours 0 minutes and 8.29 seconds (8.29s).
+[0m01:50:01.811391 [debug] [MainThread]: Command end result
+[0m01:50:01.865922 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\SURF\snowflake_pilot\target\manifest.json
+[0m01:50:01.871971 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\SURF\snowflake_pilot\target\semantic_manifest.json
+[0m01:50:01.878467 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\SURF\snowflake_pilot\target\run_results.json
+[0m01:50:01.879492 [info ] [MainThread]: 
+[0m01:50:01.879492 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:50:01.880476 [info ] [MainThread]: 
+[0m01:50:01.880476 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m01:50:01.882507 [debug] [MainThread]: Command `dbt run` succeeded at 01:50:01.881503 after 10.46 seconds
+[0m01:50:01.882507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002481306BCE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002481306BBC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024812AC3590>]}
+[0m01:50:01.882507 [debug] [MainThread]: Flushing usage events
+[0m01:50:04.190465 [debug] [MainThread]: An error was encountered while trying to flush usage events
