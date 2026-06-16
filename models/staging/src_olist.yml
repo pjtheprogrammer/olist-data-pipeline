@@ -9,3 +9,5 @@ sources:
         identifier: RAW_CUSTOMERS
       - name: raw_orders
         identifier: RAW_ORDERS
+      - name: raw_order_items
+        identifier: RAW_ORDER_ITEMS

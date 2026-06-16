@@ -1,0 +1,1 @@
+select * from {{source('olist_raw', 'raw_order_items')}}
