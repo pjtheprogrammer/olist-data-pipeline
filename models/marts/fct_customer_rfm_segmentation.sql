@@ -28,5 +28,16 @@ select
     6 - ntile(5) over (order by most_recent_order asc) as r_score,
     ntile(5) over (order by order_frequency asc) as f_score,
     ntile(5) over (order by total_order_value asc) as m_score,
-    (r_score || f_score || m_score) as rfm_score
+    (r_score || f_score || m_score) as rfm_score,
+    case
+        when rfm_score = '555' or rfm_score = '554' or rfm_score = '455'
+        then 'champion'
+        when (f_score > 3) and (r_score > 3)
+        then 'loyal'
+        when (r_score < 3) and (f_score > 3 or m_score > 3)
+        then 'at risk'
+        when (r_score + f_score + m_score)/3.0 < 1.5
+        then 'lost/hibernating'
+        else 'average'
+    end as customer_rank
 from customer_raw_rfm_records
